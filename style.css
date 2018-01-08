@@ -611,6 +611,103 @@ p.sub-title {
     transform: scale(1.1);
 }
 
+/*==== Form CSS === */
+
+.form-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.form-container {
+    top: 50%;
+    position: fixed;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px 30px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+	width: 100%;
+}
+
+.reg-popup.form-container {
+    max-width: 600px;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 12px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid #eaeaea;
+}
+
+form input[type=submit] {
+    background: #fff;
+    border: 1px solid #e42a97;
+    color: #e42a97;
+    max-width: 130px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-container p {
+    margin-bottom: 25px;
+}
+
+.form-container h2 {
+    margin-bottom: 5px;
+}
+
+#form-close {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background: #e62a97;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: block;
+    color: #fff;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-bg a {
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#silver-form.show-form, #gold-form.show-form, #platinum-form.show-form, #contact-form.show-form, #terms-form.show-form, #privacy-form.show-form {
+    display: block;
+}
+
+#silver-form, #gold-form, #platinum-form, #contact-form, #terms-form, #privacy-form {
+    display: none;	
+}
+
+.cursor-btn {
+    cursor: pointer;
+}
+
+.form-container.reg-popup p {
+    margin-bottom: 15px;
+}
+
+.form-container.reg-popup h2 {
+    margin-bottom: 20px;
+}
 /* ==================================== RESPONSIVE STARTS HERE =========================== */
 
 @media screen and (max-width: 1400px) {
@@ -676,6 +773,7 @@ ul.main-nav li:last-child {
 
 #back-top {
     right: 10px;
+    bottom: 140px;
 }
 
 }
@@ -791,6 +889,13 @@ p.sub-title {
     width: 31.33%;
     margin-right: 3%;
 }
+
+#form-close {
+    position: absolute;
+    top: -18px;
+    right: 0;
+}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -850,4 +955,17 @@ p.sub-title {
 #main-footer img {
     margin-bottom: 15px;
 }
+}
+
+@media screen and (max-width: 480px) {
+.reg-popup.form-container {
+    top: 0;
+    transform: unset;
+    left: 0;
+    width: 100%;
+}
+
+.reg-popup #form-close {
+    top: 0;
+}	
 }

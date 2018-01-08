@@ -56,7 +56,7 @@
 			<div class="call-to text-center text-white">
 				<p>Our Special Offer</p>
 				<h2>Oil Massage 45 min. for Only $59</h2>
-				<a href="#" class="pink-btn btn gen-btn">Make An Appointment</a>
+				<a class="pink-btn btn gen-btn cursor-btn" onclick="contactpopup()">Make An Appointment</a>
 			</div><!--call-to-->
 		</div><!--container-->
 	</section><!--cta-->
@@ -192,7 +192,7 @@
 							<li>Hot Stone Massage</li>
 							<li>Body Polish (1 hr)</li>
 						</ul>
-						<a href="#" class="gen-btn">Purchase</a>
+						<a class="gen-btn cursor-btn" onclick="silverpopup()">Purchase</a>
 					</div><!--col-1-3-->
 					<div class="col-1-3 gutter-3">
 						<h2>70<sup>$</sup></h2>
@@ -203,7 +203,7 @@
 							<li>Hot Stone Massage</li>
 							<li>Body Polish (1 hr)</li>
 						</ul>
-						<a href="#" class="gen-btn">Purchase</a>
+						<a class="gen-btn cursor-btn" onclick="goldpopup()">Purchase</a>
 					</div><!--col-1-3-->
 					<div class="col-1-3 gutter-3">
 						<h2>90<sup>$</sup></h2>
@@ -214,7 +214,7 @@
 							<li>Hot Stone Massage</li>
 							<li>Body Polish (1 hr)</li>
 						</ul>
-						<a href="#" class="gen-btn">Purchase</a>
+						<a class="gen-btn cursor-btn" onclick="platinumpopup()">Purchase</a>
 					</div><!--col-1-3-->
 				</div><!--row-->
 			</div><!--pricing-->
@@ -241,7 +241,7 @@
 	<div id="bottom-footer">
 		<div class="container clear">
 			<div class="left-footer text-white">
-				<p>Online Beauty Care  2018. All Rights Reserved | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+				<p>Online Beauty Care  2018. All Rights Reserved | <a onclick="termspopup()" class="cursor-btn">Terms of Use</a> | <a onclick="privacypopup()" class="cursor-btn">Privacy Policy</a></p>
 			</div><!--left-footer-->
 			
 			<div class="right-footer">
@@ -321,6 +321,194 @@
 			}
 		}
 		
+		// Silver form
+		function silverpopup() {
+			var bg = document.getElementById("silver-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+
+		// Gold form
+		function goldpopup() {
+			var bg = document.getElementById("gold-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+
+		// Platinum form
+		function platinumpopup() {
+			var bg = document.getElementById("platinum-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+
+		// Oil Massage form
+		function contactpopup() {
+			var bg = document.getElementById("contact-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+		
+		// Privacy form
+		function privacypopup() {
+			var bg = document.getElementById("privacy-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+		
+		// Terms form
+		function termspopup() {
+			var bg = document.getElementById("terms-form");
+			if (bg.className === "") {
+				bg.className = "show-form";
+			} else {
+				bg.className = ""
+			}
+		}
+	
 	</script>
+
+	
+	<!-- ============== Silver Form =============-->
+	<div id="silver-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="silverpopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center">
+			<a id="form-close" onclick="silverpopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Book Now</h2>
+				<p>Enjoy the best silver package experience at a low price!</p>
+				<form action="mailto:ralphanthonypile27@gmail.com?
+				&subject=Silver Booking
+				&name
+				&mail
+				&comment" method="post" enctype="text/plain">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="mail" placeholder="Email" required>
+					<input type="text" name="phone" placeholder="Phone Number" required>
+					<input type="submit" value="Send">
+				</form>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div><!--silver-form-->
+
+	<!-- ============== Gold Form =============-->
+	<div id="gold-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="goldpopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center">
+			<a id="form-close" onclick="goldpopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Book Now</h2>
+				<p>Enjoy the best gold package experience at a low price!</p>
+				<form action="mailto:ralphanthonypile27@gmail.com?
+				&subject=Gold Booking
+				&name
+				&mail
+				&comment" method="post" enctype="text/plain">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="mail" placeholder="Email" required>
+					<input type="text" name="phone" placeholder="Phone Number" required>
+					<input type="submit" value="Send">
+				</form>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div>
+
+	<!-- ============== Platinum Form =============-->
+	<div id="platinum-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="platinumpopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center">
+			<a id="form-close" onclick="platinumpopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Book Now</h2>
+				<p>Enjoy the best platinum package experience at a low price!</p>
+				<form action="mailto:ralphanthonypile27@gmail.com?
+				&subject=Platinum Booking
+				&name
+				&mail
+				&comment" method="post" enctype="text/plain">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="mail" placeholder="Email" required>
+					<input type="text" name="phone" placeholder="Phone Number" required>
+					<input type="submit" value="Send">
+				</form>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div>
+	
+	<!-- ============== Contact Form =============-->
+	<div id="contact-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="contactpopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center">
+			<a id="form-close" onclick="contactpopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Book Now</h2>
+				<p>Enjoy Oil Massage 45 min. for Only $59</p>
+				<form action="mailto:ralphanthonypile27@gmail.com?
+				&subject=Oil Massage Special Offer Booking
+				&name
+				&mail
+				&comment" method="post" enctype="text/plain">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="mail" placeholder="Email" required>
+					<input type="text" name="phone" placeholder="Phone Number" required>
+					<input type="submit" value="Send">
+				</form>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div>
+
+	<!-- ============== Privacy Policy Form =============-->
+	<div id="privacy-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="privacypopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center reg-popup">
+			<a id="form-close" onclick="privacypopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Privacy Policy</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie, mauris et laoreet dictum, tortor ligula laoreet dolor, quis dapibus eros leo in neque. Aliquam vitae nisl lobortis, ultrices quam et, sollicitudin tortor. Duis lobortis orci in nisl dignissim, vel vestibulum nisi molestie. Sed a velit pellentesque, accumsan nisi et, bibendum dui. Phasellus viverra fermentum finibus. Maecenas feugiat sapien ipsum, sit amet posuere justo condimentum eget. Aliquam sapien dolor, sollicitudin eu accumsan a, ullamcorper a felis. Sed maximus sed arcu quis maximus. Mauris iaculis dapibus pellentesque. Mauris quis magna justo. Nunc consequat sapien nec dolor tincidunt gravida. Praesent nulla augue, fringilla ac nisl at, tincidunt vulputate dui. Phasellus quis leo turpis. Maecenas quis est commodo, consequat sem quis, finibus odio.</p>
+				<p>Pellentesque ex ipsum, placerat vel massa eget, aliquet mattis mauris. In hac habitasse platea dictumst. Sed at molestie ex, quis ultrices felis. Praesent ultrices molestie nisl vel semper. Fusce tempus scelerisque odio eu eleifend. Nam nulla nisi, semper nec mi a, vehicula pellentesque neque. Mauris convallis fringilla commodo. Nulla semper massa ac purus vehicula, nec auctor mauris ullamcorper. Praesent rutrum, magna ac laoreet consectetur, nunc nisl feugiat purus, at aliquam leo nisi vestibulum eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse tincidunt odio sit amet leo laoreet, pharetra accumsan orci fermentum. Aliquam vitae facilisis ipsum. Cras convallis justo sed est consequat commodo. Nunc malesuada massa est, ut suscipit metus varius eu.</p>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div>
+
+	<!-- ============== Terms of Use Form =============-->
+	<div id="terms-form">
+		<div id="form-bg" class="form-bg">
+		<a onclick="termspopup()"><span>Close Form</span></a>
+		</div><!--form-bg-->
+		<div id="form-container" class="form-container text-center reg-popup">
+			<a id="form-close" onclick="termspopup()">X</a>
+			<div  class="form-wrapper">
+				<h2>Terms of Use</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie, mauris et laoreet dictum, tortor ligula laoreet dolor, quis dapibus eros leo in neque. Aliquam vitae nisl lobortis, ultrices quam et, sollicitudin tortor. Duis lobortis orci in nisl dignissim, vel vestibulum nisi molestie. Sed a velit pellentesque, accumsan nisi et, bibendum dui. Phasellus viverra fermentum finibus. Maecenas feugiat sapien ipsum, sit amet posuere justo condimentum eget. Aliquam sapien dolor, sollicitudin eu accumsan a, ullamcorper a felis. Sed maximus sed arcu quis maximus. Mauris iaculis dapibus pellentesque. Mauris quis magna justo. Nunc consequat sapien nec dolor tincidunt gravida. Praesent nulla augue, fringilla ac nisl at, tincidunt vulputate dui. Phasellus quis leo turpis. Maecenas quis est commodo, consequat sem quis, finibus odio.</p>
+				<p>Pellentesque ex ipsum, placerat vel massa eget, aliquet mattis mauris. In hac habitasse platea dictumst. Sed at molestie ex, quis ultrices felis. Praesent ultrices molestie nisl vel semper. Fusce tempus scelerisque odio eu eleifend. Nam nulla nisi, semper nec mi a, vehicula pellentesque neque. Mauris convallis fringilla commodo. Nulla semper massa ac purus vehicula, nec auctor mauris ullamcorper. Praesent rutrum, magna ac laoreet consectetur, nunc nisl feugiat purus, at aliquam leo nisi vestibulum eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse tincidunt odio sit amet leo laoreet, pharetra accumsan orci fermentum. Aliquam vitae facilisis ipsum. Cras convallis justo sed est consequat commodo. Nunc malesuada massa est, ut suscipit metus varius eu.</p>
+			</div><!--form-wrapper-->
+		</div><!--form-container-->
+	</div>
+	
   </body>
 </html>
